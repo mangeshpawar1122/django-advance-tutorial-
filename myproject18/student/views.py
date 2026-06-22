@@ -33,3 +33,13 @@ def student_edit(request, pk):
   else:
     form = StudentForms(instance=student)
     return render(request,"student/student_create.html",{'form':form})  
+  
+
+
+def student_delete(request,pk):
+  student = get_object_or_404(Student,pk=pk)
+  if request.method == 'POST':
+    student.delete()
+    return redirect('student_list')
+  return render(request,'student/student_confirm_delete.html',{'student':student})
+
