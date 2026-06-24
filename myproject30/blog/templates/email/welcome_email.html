@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container{
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .header{
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        h2{
+            margin: 0;
+        }
+
+        p{
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .btn{
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .footer{
+            text-align: center;
+            margin-top: 20px;
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h2>Course Registration Successful</h2>
+        </div>
+
+        <h3>Hello {{ name }},</h3>
+
+        <p>
+            Thank you for registering for the
+            <strong>{{ course }}</strong> course.
+        </p>
+
+        <p>
+            Your registration has been completed successfully.
+        </p>
+
+        <p>
+            We are excited to have you as a student and wish you success in your learning journey.
+        </p>
+
+        <a href="#" class="btn">Start Learning</a>
+
+        <div class="footer">
+            <p>© 2026 Course Management System</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
