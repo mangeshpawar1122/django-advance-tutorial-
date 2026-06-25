@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User-File Cache Template</title>
+<head>
+</head>
+<body>
+  <h1>User Data (File-Based Cache Demo) </h1>
+  <table border='1' cellpadding='10'>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Subscribers</th>
+    </tr>
+    {% for users in user %}
+    <tr>
+      <th> {{ users.name }} </th>
+      <th> {{ users.email }} </th>
+      <th> {{ users.sub }} </th>
+    </tr>
+    {% endfor %}
+  </table>
+
+</body>
+</html>
