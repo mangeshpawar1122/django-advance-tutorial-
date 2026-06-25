@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User-List Cache Template</title>
+<head>
+</head>
+<body>
+  <h1>User List </h1>
+  <ul>
+    {% for users in user %}
+    <li>
+       {{ users.name }} -  {{ users.sub }} 
+    </li>
+    {% endfor %}
+  </ul>
+
+</body>
+</html>
