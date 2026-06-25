@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cache Template</title>
+<head>
+</head>
+<body>
+  <h1>YouTube User List </h1>
+  <table border='1' cellpadding='8'>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Subscribers</th>
+    </tr>
+    {% for users in user %}
+    <tr>
+      <th> {{ users.name }} </th>
+      <th> {{ users.email }} </th>
+      <th> {{ users.subscribers }} </th>
+    </tr>
+    {% endfor %}
+  </table>
+
+</body>
+</html>
